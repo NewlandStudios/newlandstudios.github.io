@@ -1,0 +1,961 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="WEFiles/Css/v02/openElement.css?v=50491123200" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=50491123200" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base.css?v=50491123200" />
+  <link id="OETemplate2" rel="stylesheet" type="text/css" href="Templates/preloader.css?v=50491123200" />
+  <link id="OETemplate3" rel="stylesheet" type="text/css" href="Templates/Base_Menu.css?v=50491123200" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="index.css?v=50491123200" />
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/WEMenu-v23.css?v=50491123200" />
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/opentip.css?v=50491123200" />
+  <link rel="stylesheet" type="text/css" href="WEFiles/EG/EGf8c88e12/Css/jquery.vegas-v89.css?v=50491123200" />
+  <link rel="stylesheet" type="text/css" href="WEFiles/EG/EGf79d11e9/Css/parallax-safe-v26.css?v=50491123200" />
+  <link rel="stylesheet" type="text/css" href="WEFiles/EG/EG9f25bfab/Css/OERespPanel-v70.css?v=50491123200" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=50491123200" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"index","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"","RenderMode":"Export","PageAssociatePath":"index","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=50491123200"></script>
+  <script type="text/javascript" src="index(var).js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EG8ced4f68/Js/field-def-text-v59.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/WEMenu-v23.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EG891d4068/Js/anchor-scroll-v13.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EG15ce8951/Js/jquery-sticky-v53.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EG15ce8951/Js/sticky-v51.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/Plugins/jquery.form.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/opentip-jquery.min.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/WESendMail-v210.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EGf8c88e12/Js/jquery.vegas.min-v81.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EGf8c88e12/Js/WEBackgroundSlider-v213.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EGf79d11e9/Js/parallax-safe-v33.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EGb09efbd1/Js/iframeprotect-v18.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/EG/EG9f25bfab/Js/OERespPanel-v104.js?v=50491123200"></script>
+  <script type="text/javascript">
+   var WEEdValidators = {"WEFORMULAIRENOM":[{"MsgError":"Veuillez inscrire votre message d'erreur.","Expression":".+"}],"WEEMAIL":[{"MsgError":"Veuillez inscrire votre message d'erreur.","Expression":".+"}],"WEMESSAGEFORMULAIRE":[{"MsgError":"Veuillez inscrire votre message d'erreur.","Expression":".+"}]}
+  </script>
+  <style id="OEScriptManager" type="text/css">
+   /* transition effect */
+   .transitions, .transitions a {
+   	-webkit-transition: all 1s ease;
+   	-moz-transition: all 1s ease;
+   	-o-transition: all 1s ease;
+   	transition:	all 1s ease;
+   }
+   
+   
+   #WEToTop {
+   	position:fixed !important;
+   	z-index:99999 !important;
+   }
+   #WEToTop:not(.c-visible) {
+   	bottom:-35px !important;
+   	opacity:0;
+   }
+   
+   body {
+       overflow: hidden;
+   }
+   
+   /* Preloader */
+   
+   #preloader {
+       position:fixed;
+       top:0;
+       left:0;
+       right:0;
+       bottom:0;
+       background-color:#fff; /* change if the mask should have another color then white */
+       z-index:9999999; /* makes sure it stays on top */
+   }
+   
+   #status {
+       width:166px;
+       height:166px;
+       margin:-83px 0 0 -83px; /* is width and height divided by two */
+       position:absolute;
+       left:50%; /* centers the loading animation horizontally one the screen */
+       top:50%; /* centers the loading animation vertically one the screen */
+       background-image:url(Files/Image/preloader.gif); /* path to your loading animation */
+       background-repeat:no-repeat;
+       background-position:center;
+   }
+   
+   .OESZ_DivContent > .oeip-wrapper {
+   	position: absolute;
+   	left: 0; top: 0; right: 0; bottom: 0;
+   	cursor: pointer;
+   }
+   .oeip-wrapper iframe {
+   	position: relative; /* IE needs a position other than static */
+   	pointer-events: none;
+   }
+   .oeip-wrapper iframe.clicked {
+   	pointer-events: auto;
+   }
+  </style>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <script type="text/javascript">
+   $(function(){
+   	
+   	// Button "Back to top of the page" / Bouton "Vers le haut de la page"
+   
+   	$('body').prepend('<a name="page-top" id="page-top">'); // create anchor at the page top
+       
+   	$(window).on('scroll', function(){
+   		$('#WEToTop').toggleClass('c-visible', ($(window).scrollTop() > 100)); // show the button if vertical scroll is at least 100px
+   	}).trigger('scroll'); // update on opening the page	
+   	
+   });
+   $(function(){
+   	// Fix problem with "fixed"(parallax) background on iPad/iPhone
+   	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+   	var iOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream; // MSStream is to filter out IE11
+   	if (iOS) {
+   		$('.fix-iOS-bg').css('background-attachment', 'scroll');
+   	}	
+   });
+   $(function(){
+   
+   	var wsTimer = null;
+   	$(window).scroll(function(){
+   		clearTimeout(wsTimer);
+   		wsTimer = setTimeout(onScroll, 50); // avoid too many calls
+   	});
+   	
+   	// hide menu on clicking outside of it:
+   	$('body').click(function(ev){
+   		if (!$(ev.target).closest('.OEWEMenu').length) { // clicked element is not inside any menu
+   			$('.OEWEMenu').find('.OESZ_WEMenuGroup').stop().hide(); // hide all menus
+   		}
+   	});
+   	
+   	function onScroll() {
+   		var wHeight 	= $(window).height(),
+   			wTop 		= $(window).scrollTop(),
+   			wBottom 	= wTop + wHeight;
+   		
+   		$('.OEWEMenu').each(function(){ // Hide popup menus on scroll when they are no longer visible
+   			var $menu = $(this).find('.OESZ_WEMenuGroup');
+   			$menu.stop(); 							// end any ongoing animation
+   			if ($menu.css('display') != 'none') { 	// currently visible
+   				if ($menu.offset().top > wBottom-10 || ($menu.offset().top+$menu.height()) < wTop+10) { // out of visible area
+   					$menu.hide();
+   				}
+   			}
+   		});		
+   	}
+   
+   });
+   (function(){
+   
+   	var tID = null;
+   	
+   	$('#status').css('background-image', 'url("' + $('#PRELOADIMG').find('img').attr('src') + '")');
+   	
+   	function onContentLoaded() {
+   		// call only once:
+   		$(window).off('load.oePreloader');
+   		clearTimeout(tID);
+   		
+   		// remove preloader:
+   		$('#status').fadeOut(); // will first fade out the loading animation
+   		$('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website.
+   		$('body').css({'overflow':'visible'});
+   	}
+   	
+   	$(function(){
+   		var tID = setTimeout(onContentLoaded, 7000); // wait max 7 seconds after the page structure is loaded
+   	})
+   	$(window).on('load.oePreloader', onContentLoaded); // make sure the whole site is loaded
+   
+   })();
+  </script>
+ </head>
+ <body class="RWAuto">
+  <form id="XForm" method="post" action="#"></form>
+  <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
+  <div id="XBody" class="BaseDiv RWidth OEPageXbody OESK_XBody_Default" style="z-index:3000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTRel">
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WE4281ef8752" class="BaseDiv RBoth OEEG9f25bfab OESK_EG9f25bfab_Default  transitions" style="z-index:3006">
+       <div class="OESZ OESZ_DivContent OESZG_WE4281ef8752">
+        <div class="OECT OECT_OuterContent OECTAbs">
+         <div id="WE94287141f3" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  oerp-inner-content" style="z-index:3001">
+          <div class="OESZ OESZ_DivContent OESZG_WE94287141f3">
+           <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+            <div class="OERelLine OEHAlignL OEVAlignB">
+             <div id="WEcdeead5b1a" class="BaseDiv RBoth OEWECadre OESK_WECadre_Default" style="z-index:3004">
+              <div class="OESZ OESZ_DivContent OESZG_WEcdeead5b1a">
+               <div class="OESZ OESZ_Top OESZG_WEcdeead5b1a"></div>
+               <div class="OESZ OESZ_Content OESZG_WEcdeead5b1a"></div>
+               <div class="OESZ OESZ_Bottom OESZG_WEcdeead5b1a"></div>
+              </div>
+             </div>
+            </div>
+            <div class="OERelLine OEHAlignC OEVAlignM">
+             <div id="WEb6a9b4834b" class="BaseDiv RNone OEWELabel OESK_WELabel_Default  apply-smoove transitions" style="z-index:3001">
+              <div class="OESZ OESZ_DivContent OESZG_WEb6a9b4834b">
+               <span class="OESZ OESZ_Text OESZG_WEb6a9b4834b ContentBox"><b><span style="color:rgb(192, 0, 0);">Newland</span>studios</b><br /></span>
+              </div>
+             </div>
+            </div>
+            <div class="OERelLine OEHAlignC OEVAlignB">
+             <div id="WE2e571886d8" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo  apply-smoove transitions" style="z-index:3004" onclick="return OE.Navigate.open(event,'index.htm#about',1)">
+              <div class="OESZ OESZ_DivContent OESZG_WE2e571886d8">
+               <a href="index.htm#about" data-cd="PageLink">
+                <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="OERelLine OEHAlignC OEVAlignT">
+             <div id="WETEXTE_AIDE" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3003">
+              <div class="OESZ OESZ_DivContent OESZG_WETEXTE_AIDE">
+               <span class="ContentBox">This template is provided by OpenElement and was made in partnership with Sensode.<br />A complete FAQ is available describing various elements composing it (see the FAQ page in the Site Explorer on the left).<br />In case of questions, please visit the forum.<br />This text block can safely be removed and will not appear on the page.<br /></span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="WE97ed1c10dd" class="BaseDiv RNone OEWEAnchor OESK_WEAnchor_Default" style="z-index:3002">
+          <div class="OESZ OESZ_DivContent OESZG_WE97ed1c10dd">
+           <a name="welcome"></a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignL OEVAlignB">
+      <div id="WEMENU" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:2003">
+       <div class="OESZ OESZ_DivContent OESZG_WEMENU">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WE1f4b4c704e" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  transitions" style="z-index:2003">
+           <div class="OESZ OESZ_DivContent OESZG_WE1f4b4c704e">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignM">
+              <div id="WE51ea8d21d9" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default  hand transitions" style="z-index:2007">
+               <div class="OESZ OESZ_DivContent OESZG_WE51ea8d21d9">
+                <img src="WEFiles/Image/WEImage/menu-mobile60x60-WEMENU_MOBILE.png" class="OESZ OESZ_Img OESZG_WE51ea8d21d9" alt="" />
+               </div>
+              </div><div id="WEbc6db2ad60" class="BaseDiv RNone OEWELink OESK_WELink_Default OE_ActiveLink  transitions btmobile" style="z-index:2004" onclick="return OE.Navigate.open(event,'index.htm#welcome',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WEbc6db2ad60 OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WEbc6db2ad60 OE_ActiveLink ContentBox" data-cd="PageLink" href="index.htm#welcome">home</a>
+               </div>
+              </div><div id="WE115a75ae6e" class="BaseDiv RNone OEWELink OESK_WELink_Default OE_ActiveLink  transitions btmobile" style="z-index:2005" onclick="return OE.Navigate.open(event,'index.htm#about',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE115a75ae6e OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WE115a75ae6e OE_ActiveLink ContentBox" data-cd="PageLink" href="index.htm#about">about US</a>
+               </div>
+              </div><div id="WEed3575c178" class="BaseDiv RNone OEWELink OESK_WELink_Default OE_ActiveLink  transitions btmobile" style="z-index:2006" onclick="return OE.Navigate.open(event,'index.htm#gallery',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WEed3575c178 OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WEed3575c178 OE_ActiveLink ContentBox" data-cd="PageLink" href="index.htm#gallery">PROJECTS</a>
+               </div>
+              </div><div id="WE791ee8d457" class="BaseDiv RNone OEWELink OESK_WELink_Default OE_ActiveLink  transitions btmobile" style="z-index:2007" onclick="return OE.Navigate.open(event,'index.htm#news',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE791ee8d457 OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WE791ee8d457 OE_ActiveLink ContentBox" data-cd="PageLink" href="index.htm#news">news</a>
+               </div>
+              </div><div id="WE0078fb426f" class="BaseDiv RNone OEWELink OESK_WELink_Default OE_ActiveLink  transitions btmobile" style="z-index:2007" onclick="return OE.Navigate.open(event,'index.htm#contact',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE0078fb426f OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WE0078fb426f OE_ActiveLink ContentBox" data-cd="PageLink" href="index.htm#contact">contact</a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WEfa75ec6744" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3004">
+       <div class="OESZ OESZ_DivContent OESZG_WEfa75ec6744">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+         <div class="OERelLine OEHAlignL OEVAlignB">
+          <div id="WE46954fcd9d" class="BaseDiv RNone OEWEAnchor OESK_WEAnchor_Default" style="z-index:3003">
+           <div class="OESZ OESZ_DivContent OESZG_WE46954fcd9d">
+            <a name="about"></a>
+           </div>
+          </div>
+         </div>
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WEcac845d180" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  apply-smoove transitions" style="z-index:3001">
+           <div class="OESZ OESZ_DivContent OESZG_WEcac845d180">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WE6c0657ab0c" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3001">
+               <div class="OESZ OESZ_DivContent OESZG_WE6c0657ab0c">
+                <span class="OESZ OESZ_Text OESZG_WE6c0657ab0c ContentBox">ABOUT US</span>
+               </div>
+              </div>
+             </div>
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WEfa8bf25194" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3002">
+               <div class="OESZ OESZ_DivContent OESZG_WEfa8bf25194">
+                <span class="ContentBox">Full Local Bespoke Media Production&nbsp;</span>
+               </div>
+              </div>
+             </div>
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WEaa56fe8589" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3003">
+               <div class="OESZ OESZ_DivContent OESZG_WEaa56fe8589">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WE0356adf5fd" class="BaseDiv RWidth OEWEText OESK_WEText_Default  texte blocdescription" style="z-index:3002">
+                   <div class="OESZ OESZ_DivContent OESZG_WE0356adf5fd">
+                    <span class="ContentBox">Newland Studios is a new media company established in Hull in 2012. We specialise in bespoke media production taylored to every need whether it is a family occasion or a corporate presentation.<br /><br />We offer a complete service from initial conception to Media copying. We offer a complete production planning service, studio and location shooting and &nbsp;full post production facilities.&nbsp;<br /><br />We have covereded everything from Fashion Shows, Weddings, Live events, Music Promos, Industrial Processess, Plays and Pantomimes, as well as working with many commercial customers producing numerous instructional and promotional videos for our many and varied clients.&nbsp;<br /><br /></span>
+                   </div>
+                  </div><div id="WE2fe785e54f" class="BaseDiv RWidth OEWEText OESK_WEText_Default  blocdescription" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WE2fe785e54f">
+                    <span class="ContentBox">. Full Broadcast Quality Video Production<br /><br />. Full Pre-Production and Planning Service.<br /><br />. Multi-Camera Live Event Service Available.<br /><br />. Complete Post Production Service including Editing and DVD Production.<br /><br /></span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WE2180ab8c03" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  apply-smoove transitions" style="z-index:3002">
+           <div class="OESZ OESZ_DivContent OESZG_WE2180ab8c03">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WE78aa340bcc" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3006">
+               <div class="OESZ OESZ_DivContent OESZG_WE78aa340bcc">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WEe8f738a83e" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:3005">
+                   <div class="OESZ OESZ_DivContent OESZG_WEe8f738a83e OEGo transitions">
+                    <a href="Commercial%20Productions.htm" rel="/Commercial%20Productions.htm">
+                     <img src="Files/Image/IDEAL%20FOUNDRY-mpg-Still001.jpg" class="OESZ OESZ_Img OESZG_WEe8f738a83e" alt="" />
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WEa400760256" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEa400760256">
+                    <span class="OESZ OESZ_Text OESZG_WEa400760256 ContentBox">Commercial Productions<br /></span>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WEfac67d7179" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEfac67d7179">
+                    <span class="ContentBox">Newland Studios have worked with a number of Commercial Clients providing bespoke video and media services including working with a National Charity and a regional property developer. We also specialise in internet promos and specialist social media content.&nbsp;</span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div><div id="WEc4f51e4c51" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3004">
+               <div class="OESZ OESZ_DivContent OESZG_WEc4f51e4c51">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WEda34e12739" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEda34e12739 OEGo transitions">
+                    <a href="Event%20Productions.htm">
+                     <img src="Files/Image/sinderzpic.jpg" class="OESZ OESZ_Img OESZG_WEda34e12739" alt="" />
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WE21414e9c23" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3002">
+                   <div class="OESZ OESZ_DivContent OESZG_WE21414e9c23">
+                    <span class="OESZ OESZ_Text OESZG_WE21414e9c23 ContentBox">Events Productions<br /></span>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WE16d591bebe" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WE16d591bebe">
+                    <span class="ContentBox">Newland Studios have recorded numerous private and public events on behalf of both individuals and company clients. &nbsp;these range from Stage Shows, Concerts, Parties and Weddings.&nbsp;<br /></span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div><div id="WE8148b2f8ff" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3005">
+               <div class="OESZ OESZ_DivContent OESZG_WE8148b2f8ff">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WEec5c95be67" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEec5c95be67 OEGo transitions">
+                    <a href="specialist%20av.htm">
+                     <img src="Files/Image/4%20phonecall-mpeg-Still001.jpg" class="OESZ OESZ_Img OESZG_WEec5c95be67" alt="" />
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WE05614329b7" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3002">
+                   <div class="OESZ OESZ_DivContent OESZG_WE05614329b7">
+                    <span class="OESZ OESZ_Text OESZG_WE05614329b7 ContentBox">Specialist &nbsp;Performance A/V<br /></span>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WEf67d2f679e" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEf67d2f679e">
+                    <span class="ContentBox">We are also experienced in &nbsp;creating specialist media for &nbsp;live productions, having done work for &nbsp;Hull Truck, Hull New Theatre, Northern Academy and Kardomah94. &nbsp;These have ranged from simple projected backgrounds to full interactive scenes and incidental videos.<br /></span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div><div id="WEdc5152902b" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3004">
+               <div class="OESZ OESZ_DivContent OESZG_WEdc5152902b">
+                <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                 <div id="WEd59fc2e1ae" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:3002">
+                  <div class="OESZ OESZ_DivContent OESZG_WEd59fc2e1ae">
+                   <a href="Music%20Promo%20Videos.htm">
+                    <img src="WEFiles/Image/WEImage/Paul%20Marklew%20-%20Breathe%20in%20deep-1-mp4-Still001-WEd59fc2e1ae.jpg" class="OESZ OESZ_Img OESZG_WEd59fc2e1ae" alt="" />
+                   </a>
+                  </div>
+                 </div>
+                 <div id="WE1889ec541f" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3001">
+                  <div class="OESZ OESZ_DivContent OESZG_WE1889ec541f">
+                   <span class="OESZ OESZ_Text OESZG_WE1889ec541f ContentBox">Music Promo Videos<br /></span>
+                  </div>
+                 </div>
+                 <div id="WE749cf002e3" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3003">
+                  <div class="OESZ OESZ_DivContent OESZG_WE749cf002e3">
+                   <span class="ContentBox"><span style="font-family:TitilliumText25L;color:rgb(165, 165, 165);">Newland Studios has worked with numerous performing artists to provide them with promotional materials. we have worked with both single performers and bands, both using live performances and recorded music. Whatever your requirements you can be sure we can accomodate you.</span></span>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignC OEVAlignM">
+      <div id="WEd5a2dfb812" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  parallax" style="z-index:3008">
+       <div class="OESZ OESZ_DivContent OESZG_WEd5a2dfb812">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden"></div>
+       </div>
+      </div><div id="WEb026e6e054" class="BaseDiv RBoth OEEG9f25bfab OESK_EG9f25bfab_Default" style="z-index:3008">
+       <div class="OESZ OESZ_DivContent OESZG_WEb026e6e054">
+        <div class="OECT OECT_OuterContent OECTAbs">
+         <div id="WE969d06b635" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  oerp-inner-content" style="z-index:3001">
+          <div class="OESZ OESZ_DivContent OESZG_WE969d06b635">
+           <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden"></div>
+          </div>
+         </div>
+         <div id="WEdd43045de0" class="BaseDiv RNone OEWEAnchor OESK_WEAnchor_Default" style="z-index:3002">
+          <div class="OESZ OESZ_DivContent OESZG_WEdd43045de0">
+           <a name="gallery"></a>
+          </div>
+         </div>
+         <div id="WEdf23ba1eb4" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH apply-smoove" style="z-index:3003">
+          <div class="OESZ OESZ_DivContent OESZG_WEdf23ba1eb4">
+           <span class="OESZ OESZ_Text OESZG_WEdf23ba1eb4 ContentBox">PROJECTS</span>
+          </div>
+         </div>
+         <div id="WE700d222772" class="BaseDiv RBoth OEWEText OESK_WEText_Default OECenterAH" style="z-index:3004">
+          <div class="OESZ OESZ_DivContent OESZG_WE700d222772">
+           <span class="ContentBox"><span style="color:rgb(255, 255, 255);font-family:TitilliumText25L;">Here is a small selection of some of the projects for which Newland Studios have credits.&nbsp;</span><br /></span>
+          </div>
+         </div>
+         <div id="WE3b5bc121a1" class="BaseDiv RBoth OEWECadre OESK_WECadre_Default OECenterAH" style="z-index:3006">
+          <div class="OESZ OESZ_DivContent OESZG_WE3b5bc121a1">
+           <div class="OESZ OESZ_Top OESZG_WE3b5bc121a1"></div>
+           <div class="OESZ OESZ_Content OESZG_WE3b5bc121a1"></div>
+           <div class="OESZ OESZ_Bottom OESZG_WE3b5bc121a1"></div>
+          </div>
+         </div>
+         <div id="WEfb41976979" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default OECenterAH" style="z-index:3007">
+          <div class="OESZ OESZ_DivContent OESZG_WEfb41976979">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/ragrN8umeus' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/ragrN8umeus&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/ragrN8umeus&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE4aa9f9d192" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3010">
+          <div class="OESZ OESZ_DivContent OESZG_WE4aa9f9d192">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/v--SwQBBO34' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/v--SwQBBO34&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/v--SwQBBO34&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE035fbbdfef" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3008">
+          <div class="OESZ OESZ_DivContent OESZG_WE035fbbdfef">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/pL7oZhsRVyk' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/pL7oZhsRVyk&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/pL7oZhsRVyk&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE5ce7396daa" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3009">
+          <div class="OESZ OESZ_DivContent OESZG_WE5ce7396daa">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/dnbspVnsxhc' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/dnbspVnsxhc&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/dnbspVnsxhc&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WEf3a5baa33a" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3015">
+          <div class="OESZ OESZ_DivContent OESZG_WEf3a5baa33a">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/aKIUCb3mhik' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/aKIUCb3mhik&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/aKIUCb3mhik&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE174066c43e" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default OECenterAH" style="z-index:3016">
+          <div class="OESZ OESZ_DivContent OESZG_WE174066c43e">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/y9kS1h8mpJo' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/y9kS1h8mpJo&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/y9kS1h8mpJo&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WEd75fd7dcc5" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3014">
+          <div class="OESZ OESZ_DivContent OESZG_WEd75fd7dcc5">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/cBc42i3dMZA' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/cBc42i3dMZA&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/cBc42i3dMZA&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WEe2b1949b77" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default OECenterAH" style="z-index:3013">
+          <div class="OESZ OESZ_DivContent OESZG_WEe2b1949b77">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/krokYElbMTM' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/krokYElbMTM&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/krokYElbMTM&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE52c9412acf" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:3011">
+          <div class="OESZ OESZ_DivContent OESZG_WE52c9412acf">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/v9GCqLFuvCM' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/v9GCqLFuvCM&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/v9GCqLFuvCM&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WE3ae0949c88" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default OECenterAH" style="z-index:3012">
+          <div class="OESZ OESZ_DivContent OESZG_WE3ae0949c88">
+           <script type='text/javascript'>
+           	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/eT1JMiAAlCE' frameborder='0' allowfullscreen></iframe>");
+           	document.write("<div style='display: none !important;'>"); }
+           </script>
+           <object width="100%" height="100%">
+            <param name="movie" value="http://www.youtube.com/v/eT1JMiAAlCE&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <param name="wmode" value="transparent" />
+            <embed type="application/x-shockwave-flash" src="http://www.youtube.com/v/eT1JMiAAlCE&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+           </object>
+           <script type='text/javascript'>
+           	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+          </div>
+         </div>
+         <div id="WEa7ad1118b8" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  parallax" style="z-index:3005">
+          <div class="OESZ OESZ_DivContent OESZG_WEa7ad1118b8">
+           <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden"></div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WE0283ce8977" class="BaseDiv RBoth OEEG9f25bfab OESK_EG9f25bfab_Default" style="z-index:3006">
+       <div class="OESZ OESZ_DivContent OESZG_WE0283ce8977">
+        <div class="OECT OECT_OuterContent OECTAbs">
+         <div id="WE558da3a5a0" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  oerp-inner-content" style="z-index:3002">
+          <div class="OESZ OESZ_DivContent OESZG_WE558da3a5a0">
+           <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden"></div>
+          </div>
+         </div>
+         <div id="WE8f7f4ca45b" class="BaseDiv RNone OEWEAnchor OESK_WEAnchor_Default" style="z-index:3003">
+          <div class="OESZ OESZ_DivContent OESZG_WE8f7f4ca45b">
+           <a name="news"></a>
+          </div>
+         </div>
+         <div id="WE6252fe5633" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH apply-smoove" style="z-index:3009">
+          <div class="OESZ OESZ_DivContent OESZG_WE6252fe5633">
+           <span class="OESZ OESZ_Text OESZG_WE6252fe5633 ContentBox">NEWS</span>
+          </div>
+         </div>
+         <div id="WE721ae093e6" class="BaseDiv RBoth OEWECadre OESK_WECadre_Default" style="z-index:3001">
+          <div class="OESZ OESZ_DivContent OESZG_WE721ae093e6">
+           <div class="OESZ OESZ_Top OESZG_WE721ae093e6"></div>
+           <div class="OESZ OESZ_Content OESZG_WE721ae093e6"></div>
+           <div class="OESZ OESZ_Bottom OESZG_WE721ae093e6"></div>
+          </div>
+         </div>
+         <div id="WE98cf20b440" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:3004">
+          <div class="OESZ OESZ_DivContent OESZG_WE98cf20b440">
+           <span class="ContentBox"><span style="color:rgb(255, 255, 255);font-family:TitilliumText25L;">You can keep up to date with all our lates news by following us on Twitter and Facebook. There are clips and stills from our latest projects, &nbsp;and also news about our lates special offers and promotions.<br /><br /><br /><br /><br /><br /></span></span>
+          </div>
+         </div>
+         <div id="WE9156e29b3f" class="BaseDiv RWidth OEWELink OESK_WELink_Default OECenterAH" style="z-index:3007" onclick="return OE.Navigate.blank(event,'https://twitter.com/NewlandStudios')">
+          <div class="OESZ OESZ_DivContent OESZG_WE9156e29b3f">
+           <a class="OESZ OESZ_Link OESZG_WE9156e29b3f ContentBox" data-cd="PageLink" target="_blank" href="https://twitter.com/NewlandStudios" onclick="return OE.Navigate.blank(event,this.href)"><span style="color:rgb(255, 255, 255);"><span style="font-family:TitilliumText25L;">https://twitter.com/NewlandStudio</span>s</span></a>
+          </div>
+         </div>
+         <div id="WE00eb6aee77" class="BaseDiv RWidth OEWELink OESK_WELink_Default OECenterAH" style="z-index:3008" onclick="return OE.Navigate.blank(event,'https://www.facebook.com/newlandstudios/')">
+          <div class="OESZ OESZ_DivContent OESZG_WE00eb6aee77">
+           <a class="OESZ OESZ_Link OESZG_WE00eb6aee77 ContentBox" data-cd="PageLink" target="_blank" href="https://www.facebook.com/newlandstudios/" onclick="return OE.Navigate.blank(event,this.href)"><span style="font-family:TitilliumText25L;color:rgb(255, 255, 255);">https://www.facebook.com/newlandstudios/</span></a>
+          </div>
+         </div>
+         <div id="WEe94084a104" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OECenterAH" style="z-index:3005" onclick="return OE.Navigate.open(event,'https://www.facebook.com/newlandstudios/',1)">
+          <div class="OESZ OESZ_DivContent OESZG_WEe94084a104">
+           <a href="https://www.facebook.com/newlandstudios/" data-cd="PageLink">
+            <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+           </a>
+          </div>
+         </div>
+         <div id="WEc5df8f4f87" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OECenterAH" style="z-index:3006" onclick="return OE.Navigate.open(event,'https://twitter.com/NewlandStudios',1)">
+          <div class="OESZ OESZ_DivContent OESZG_WEc5df8f4f87">
+           <a href="https://twitter.com/NewlandStudios" data-cd="PageLink">
+            <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WE723d60321d" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  parallax-2" style="z-index:3008">
+       <div class="OESZ OESZ_DivContent OESZG_WE723d60321d">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden"></div>
+       </div>
+      </div>
+     </div>
+     <div class="OERelLine OEHAlignC OEVAlignT">
+      <div id="WE9d773fe62c" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3006">
+       <div class="OESZ OESZ_DivContent OESZG_WE9d773fe62c">
+        <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+         <div class="OERelLine OEHAlignC OEVAlignT">
+          <div id="WE6ed8223043" class="BaseDiv RNone OEWEAnchor OESK_WEAnchor_Default" style="z-index:3003">
+           <div class="OESZ OESZ_DivContent OESZG_WE6ed8223043">
+            <a name="contact"></a>
+           </div>
+          </div><div id="WE898d741c31" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  apply-smoove" style="z-index:3001">
+           <div class="OESZ OESZ_DivContent OESZG_WE898d741c31">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WEd47de71cd0" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:3001">
+               <div class="OESZ OESZ_DivContent OESZG_WEd47de71cd0">
+                <span class="OESZ OESZ_Text OESZG_WEd47de71cd0 ContentBox">CONTACT</span>
+               </div>
+              </div>
+             </div>
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WEb7901525cf" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3002">
+               <div class="OESZ OESZ_DivContent OESZG_WEb7901525cf">
+                <span class="ContentBox">Want to know more? You can contact us by this form.</span>
+               </div>
+              </div>
+             </div>
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WEb6a29fcc68" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3003">
+               <div class="OESZ OESZ_DivContent OESZG_WEb6a29fcc68">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WE8a2e0541bb" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3005">
+                   <div class="OESZ OESZ_DivContent OESZG_WE8a2e0541bb">
+                    <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                     <div class="OERelLine OEHAlignL OEVAlignB">
+                      <div id="WEFORMULAIRENOM" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default  default-text" style="z-index:3001">
+                       <div class="OESZ OESZ_DivContent OESZG_WEFORMULAIRENOM">
+                        <input name="WEFORMULAIRENOM" type="text" class="OESZ OESZ_TextBox OESZG_WEFORMULAIRENOM OEDynTag0" value="Full Name" />
+                       </div>
+                      </div>
+                     </div>
+                     <div class="OERelLine OEHAlignL OEVAlignB">
+                      <div id="WEEMAIL" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default  default-text" style="z-index:3002">
+                       <div class="OESZ OESZ_DivContent OESZG_WEEMAIL">
+                        <input name="WEEMAIL" type="text" class="OESZ OESZ_TextBox OESZG_WEEMAIL OEDynTag0" value="Mail" />
+                       </div>
+                      </div>
+                     </div>
+                     <div class="OERelLine OEHAlignL OEVAlignB">
+                      <div id="WEMESSAGEFORMULAIRE" class="BaseDiv RBoth OEWETextAreaV2 OESK_WETextArea2_Default  default-text" style="z-index:3003">
+                       <div class="OESZ OESZ_DivContent OESZG_WEMESSAGEFORMULAIRE">
+                        <textarea class="OESZ OESZ_TextArea OESZG_WEMESSAGEFORMULAIRE OEDynTag0" name="WEMESSAGEFORMULAIRE" style="resize:none" rows="3" cols="50">Your message</textarea>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div><div id="WEe123e33919" class="BaseDiv RWidth OEWEText OESK_WEText_Default  blocdescription" style="z-index:3004">
+                   <div class="OESZ OESZ_DivContent OESZG_WEe123e33919">
+                    <span class="ContentBox"><span style="font-size:24px;">CONTACT ADDRESS</span><br /><br /><span style="color:rgb(165, 165, 165);">enquiries@newlandstudios.co.uk<br /><br />Tel. 07542 973515<br /><br />Newland Studios<br />Humber Film Suite<br />94 Alfred Gelder Street<br />HULL HU1 2AN.<br /><br /></span><br /></span>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="OERelLine OEHAlignC OEVAlignT">
+                  <div id="WEae1b239abb" class="BaseDiv RBoth OEWELabel OESK_WELabel_Default OEGo  transitions" style="z-index:3003">
+                   <div class="OESZ OESZ_DivContent OESZG_WEae1b239abb">
+                    <span class="OESZ OESZ_Text OESZG_WEae1b239abb ContentBox">send</span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div><div id="WEa84a0e8d58" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3002">
+           <div class="OESZ OESZ_DivContent OESZG_WEa84a0e8d58">
+            <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+             <div class="OERelLine OEHAlignL OEVAlignB">
+              <div id="WE74d1a3132e" class="BaseDiv RBoth OEWEGoogleMaps OESK_WEGoogleMaps_Default" style="z-index:3001">
+               <div class="OESZ OESZ_DivContent OESZG_WE74d1a3132e">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9438.188501367857!2d-0.34315553022460826!3d53.7441402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878be22516f4a97%3A0xfb967a25ad9d8e19!2sNewland+Studios!5e0!3m2!1sen!2suk!4v1515671379000" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </div>
+              </div>
+             </div>
+             <div class="OERelLine OEHAlignC OEVAlignT">
+              <div id="WE8ae06362a5" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default" style="z-index:3002">
+               <div class="OESZ OESZ_DivContent OESZG_WE8ae06362a5">
+                <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:hidden">
+                 <div class="OERelLine OEHAlignL OEVAlignB">
+                  <div id="WEb0d7fdfffa" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:3001">
+                   <div class="OESZ OESZ_DivContent OESZG_WEb0d7fdfffa">
+                    <span class="ContentBox">This website and all of it's content (C) NEWLAND STUDIOS 2018&nbsp;</span>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs">
+     <div id="WEToTop" class="BaseDiv RBoth OEWELinkButton OESK_WELinkButton_Default OEGo  transitions" style="z-index:1" onclick="return OE.Navigate.open(event,'#page-top',1)">
+      <div class="OESZ OESZ_DivContent OESZG_WEToTop">
+       <a class="OESZ OESZ_Text OESZG_WEToTop ContentBox" href="#page-top"><br /></a>
+      </div>
+     </div>
+     <div id="WEPRELOADIMG" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WEPRELOADIMG">
+       <img src="Files/Image/preloader.gif" class="OESZ OESZ_Img OESZG_WEPRELOADIMG" alt="" />
+      </div>
+     </div>
+    </div>
+    <div id="WE56956bf412" class="BaseDiv RBoth OEEGf8c88e12 OESK_EGf8c88e12_Default" style="z-index:3002">
+     <div class="OESZ OESZ_DivContent OESZG_WE56956bf412">
+      <div>
+      </div>
+     </div>
+    </div>
+    <div id="WE4571445e9e" class="BaseDiv RBoth OEEGf79d11e9 OESK_EGf79d11e9_Default" style="z-index:3003">
+     <div class="OESZ OESZ_DivContent OESZG_WE4571445e9e"></div>
+    </div>
+    <div id="WEde1d00b54b" class="BaseDiv RBoth OEEGf79d11e9 OESK_EGf79d11e9_Default" style="z-index:3006">
+     <div class="OESZ OESZ_DivContent OESZG_WEde1d00b54b"></div>
+    </div>
+    <div id="WE17ad01952f" class="BaseDiv RBoth OEEGf79d11e9 OESK_EGf79d11e9_Default" style="z-index:3004">
+     <div class="OESZ OESZ_DivContent OESZG_WE17ad01952f"></div>
+    </div>
+    <div id="WEb6e467b201" class="BaseDiv RBoth OEEGb09efbd1 OESK_EGb09efbd1_Default" style="z-index:3005">
+     <div class="OESZ OESZ_DivContent OESZG_WEb6e467b201"></div>
+    </div>
+    <div id="WEdd5658358d" class="BaseDiv RBoth OEWEMenu OESK_WEMenu_Default OE_ActiveLink" style="z-index:2001">
+     <div class="OESZ OESZ_DivContent OESZG_WEdd5658358d OE_ActiveLink">
+      <div class="OESZ OESZ_WEMenuGroup OESZG_WEdd5658358d OEo OE_ActiveLink" style="display:none" id="WEMenu8db7c6">
+       <div class="OESZ OESZ_WEMenuTop OESZG_WEdd5658358d OE_ActiveLink"></div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WEdd5658358d OE_ActiveLink" id="WEMenu33b28d">
+        <table onclick="return OE.Navigate.open(event,'index.dat',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WEdd5658358d OE_ActiveLink">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WEdd5658358d OE_ActiveLink">
+           <a href="index.dat">HOME</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WEdd5658358d OE_ActiveLink" id="WEMenuebcb2d">
+        <table onclick="return OE.Navigate.open(event,'index.htm#about',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WEdd5658358d OE_ActiveLink">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WEdd5658358d OE_ActiveLink">
+           <a href="index.htm#about">ABOUT</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WEdd5658358d OE_ActiveLink" id="WEMenu15715b">
+        <table onclick="return OE.Navigate.open(event,'index.htm#gallery',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WEdd5658358d OE_ActiveLink">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WEdd5658358d OE_ActiveLink">
+           <a href="index.htm#gallery">GALLERY</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WEdd5658358d OE_ActiveLink" id="WEMenu02a5ed">
+        <table onclick="return OE.Navigate.open(event,'index.htm#news',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WEdd5658358d OE_ActiveLink">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WEdd5658358d OE_ActiveLink">
+           <a href="index.htm#news">NEWS</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuItem OESZG_WEdd5658358d OE_ActiveLink" id="WEMenuea4382">
+        <table onclick="return OE.Navigate.open(event,'index.htm#contact',1)" style="border-spacing: 0px; border-collapse: collapse;" class="OESZ OESZ_WEMenuItemTable OESZG_WEdd5658358d OE_ActiveLink">
+         <tr>
+          <td class="OESZ OESZ_WEMenuText OESZG_WEdd5658358d OE_ActiveLink">
+           <a href="index.htm#contact">CONTACT</a>
+          </td>
+         </tr>
+        </table>
+       </div>
+       <div class="OESZ OESZ_WEMenuBottom OESZG_WEdd5658358d OE_ActiveLink"></div>
+      </div>
+     </div>
+    </div>
+    <div id="WEfedf2b4f69" class="BaseDiv RBoth OEEG891d4068 OESK_EG891d4068_Default" style="z-index:2002">
+     <div class="OESZ OESZ_DivContent OESZG_WEfedf2b4f69"></div>
+    </div>
+    <div id="WEd1cd10b6c4" class="BaseDiv RBoth OEEG15ce8951 OESK_EG15ce8951_Default" style="z-index:2003">
+     <div class="OESZ OESZ_DivContent OESZG_WEd1cd10b6c4"></div>
+    </div>
+    <div id="WEa62f4ad7d1" class="BaseDiv RBoth OEEG8ced4f68 OESK_EG8ced4f68_Default" style="z-index:3;display: none !important;">
+     <div class="OESZ OESZ_DivContent OESZG_WEa62f4ad7d1"></div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+  $(function(){// Scroll reveal (apparition au scroll) :
+  	(new ScrollReveal()).reveal('.apply-smoove', { duration: 1000, distance: '500px' });
+  });
+  </script>
+  <script type="text/javascript">
+   $(["Files/Image/accueil/flechebas-actif.png"]).preloadImg();
+  </script>
+ </body>
+</html>
